@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.reset-main-container {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 222, 222);
+}
+
+.error-message {
+  margin-bottom: 50px;
+}

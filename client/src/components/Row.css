@@ -1,0 +1,30 @@
+.Row_container {
+  margin: 0 10px 0 10px;
+}
+
+.carousel {
+  width: 100%;
+}
+.carousel_img {
+  display: flex;
+  width: 100%;
+  object-fit: contain;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.carousel_img a {
+  margin: 0 10px;
+}
+.carousel_img::-webkit-scrollbar {
+  display: none;
+}
+.product_img {
+  display: flex;
+  object-fit: contain;
+  width: 230px;
+  height: 170px;
+  padding: 10px;
+  box-shadow: 0px 3px 19px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  background-color: #ffffff;
+}

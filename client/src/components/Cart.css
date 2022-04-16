@@ -1,0 +1,42 @@
+.cart_container {
+  height: 100%;
+  background-color: #f3f3f3;
+}
+
+.cart_content {
+  padding: 10px;
+}
+
+.table_content {
+  width: 100%;
+}
+
+.body_content {
+  padding: 5px;
+  background-color: #ffffff;
+}
+
+.product_id > th {
+  padding: 0 5px 0 5px;
+}
+
+.cart_img {
+  object-fit: contain;
+  width: 150px;
+  height: 170px;
+}
+
+.del_icon {
+  padding: 5px;
+  width: 23px;
+  height: 23px;
+}
+
+.amt_container {
+  background-color: #ffffff;
+}
+
+.amt_container > h3 {
+  margin-top: 10px;
+  text-align: end;
+}
