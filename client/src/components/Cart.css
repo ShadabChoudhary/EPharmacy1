@@ -36,7 +36,28 @@
   background-color: #ffffff;
 }
 
-.amt_container > h3 {
+.amt_container {
   margin-top: 10px;
-  text-align: end;
+  text-align: center;
+}
+
+.total_btn {
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 33px;
+  padding: 6px 15px 6px 15px;
+  text-transform: uppercase;
+  /* width: 150px; */
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+.total_btn:hover {
+  border: none;
+  color: #fff;
+  background-color: #107ce9;
 }

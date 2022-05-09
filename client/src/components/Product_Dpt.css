@@ -41,6 +41,10 @@
   line-height: 1.8rem;
 }
 
+.description li {
+  font-weight: 500;
+}
+
 .description_title {
   font-size: 20px;
 }

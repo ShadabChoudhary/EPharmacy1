@@ -69,7 +69,7 @@ function ProductDpt() {
             ))}
           </div>
           <div className="btn_container">
-            <Link to="/checkout/payment">
+            <Link to="/buy/address">
               <button className="buy_btn ">Buy Now</button>
             </Link>
             <Link to="/cart">

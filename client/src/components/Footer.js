@@ -24,7 +24,7 @@ function Footer() {
             <BsInstagram className="social_icons"></BsInstagram>
             <FiTwitter className="social_icons"></FiTwitter>
             <BsFacebook className="social_icons"></BsFacebook>
-            <FaSnapchat className="social_icons"></FaSnapchat>
+            {/* <FaSnapchat className="social_icons"></FaSnapchat> */}
           </div>
         </div>
         <div className="middle_content">

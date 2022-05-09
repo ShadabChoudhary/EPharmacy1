@@ -103,7 +103,9 @@ function Header() {
             <div className="log-reg_container">
               {data ? (
                 <div class="dropdown">
-                  <button class="dropbtn">{data.user.name}</button>
+                  <button class="dropbtn">
+                    {data.user.name.split(" ").slice(0, 1)}
+                  </button>
                   <div class="dropdown-content">
                     <span style={{ cursor: "pointer" }} onClick={handleClick}>
                       logout

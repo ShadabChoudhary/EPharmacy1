@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 222, 222);
+  height: 100vh;
+}
+
+.form_title {
+  padding-top: 10px;
+}
+
+.form_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.5);
+}
+
+.input_control {
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  background-color: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 5px;
+  width: 50vw;
+}
+
+.ship_form {
+  margin-top: 20px;
+}
+
+.ship_pay_btn {
+  border-radius: 4px;
+  background-color: #fb641b;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px 0;
+  width: 100%;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+}

@@ -11,10 +11,9 @@ import ProductDpt from "./components/ProductDpt";
 import Buy from "./components/Buy";
 import Search from "./components/Search.js";
 import Payment from "./components/stripe/Payment.js";
+import ShippingDts from "./components/ShippingDts";
 
 function App() {
-  // const { state } = useContext();
-
   return (
     <BrowserRouter>
       <Routes>
@@ -27,6 +26,7 @@ function App() {
         <Route path="/product" element={<ProductDpt />} />
         <Route path="/product/:id" element={<Buy />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/buy/address" element={<ShippingDts />} />
         <Route path="/checkout/payment" element={<Payment />} />
       </Routes>
     </BrowserRouter>
