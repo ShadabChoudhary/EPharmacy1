@@ -76,6 +76,7 @@ class UserController {
     const token = jwt.sign({ id: user._id }, process.env.JWT_SECRETCODE, {
       expiresIn: process.env.JWT_EXPIRE,
     });
+    // console.log(token);
 
     res.cookie("jwtoken", token, {
       expires: new Date(Date.now() + process.env.COOKIE_EXPIRE),

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
-
 import CheckoutForm from "./CheckoutForm";
 import "./Payment.css";
 
@@ -10,9 +9,8 @@ import "./Payment.css";
 // This is a public sample test API key.
 // Don’t submit any personally identifiable information in requests made with this key.
 // Sign in to see your own test API key embedded in code samples.
-const stripePromise = loadStripe(
-  "pk_test_51KonCISB4OuH8RZxSUJrIpRK4ZSt5V4f3ZAOVj55R4hKWWwVRNUBOwM5uCRgOdhpXfelzb54wefaezMhxYcuqHiL00rqbfA92I"
-);
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_API_KEY);
+console.log(process.env.REACT_APP_STRIPE_API_KEY);
 
 export default function Payment() {
   const [clientSecret, setClientSecret] = useState("");
