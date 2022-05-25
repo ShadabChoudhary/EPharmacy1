@@ -10,7 +10,6 @@ import "./Payment.css";
 // Don’t submit any personally identifiable information in requests made with this key.
 // Sign in to see your own test API key embedded in code samples.
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_API_KEY);
-console.log(process.env.REACT_APP_STRIPE_API_KEY);
 
 export default function Payment() {
   const [clientSecret, setClientSecret] = useState("");
