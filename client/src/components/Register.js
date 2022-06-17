@@ -22,6 +22,7 @@ function Register() {
 
   const PostData = async (e) => {
     e.preventDefault();
+
     const { name, email, password } = regUser;
 
     const PostUser = await fetch("/api/register", {
@@ -52,9 +53,9 @@ function Register() {
     };
 
     if (data.success === false) {
-      console.log("Invalid Registeration");
       setmessage(data.message);
-      errorhandler(data.message);
+      errorhandler(data);
+      console.log(message);
     } else {
       console.log("Registeration successfull");
       setmessage(data.message);
@@ -74,6 +75,7 @@ function Register() {
               <div className="err-msg-container">
                 {message && <h1 className="err-msg">{message}</h1>}
               </div>
+
               <div className="form">
                 <label htmlFor="name" className="form-label">
                   <AccountBox style={{ fontSize: 30 }} />
@@ -87,6 +89,7 @@ function Register() {
                   className="input-control"
                   name="name"
                 />
+
                 <span className="req-err">required</span>
               </div>
               <div className="form">
@@ -102,7 +105,8 @@ function Register() {
                   className="input-control"
                   name="email"
                 />
-                <span>required</span>
+
+                <span className="req-err">required</span>
               </div>
               <div className="form">
                 <label htmlFor="password" className="form-label">
@@ -117,7 +121,8 @@ function Register() {
                   className="input-control"
                   name="password"
                 />
-                <span>required</span>
+
+                <span className="req-err">required</span>
               </div>
               <button className="btn" type="submit" onClick={PostData}>
                 Register

@@ -12,6 +12,7 @@ import Buy from "./components/Buy";
 import Search from "./components/Search.js";
 import Payment from "./components/stripe/Payment.js";
 import ShippingDts from "./components/ShippingDts";
+import SuccessPage from "./components/stripe/SuccessPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/buy/address" element={<ShippingDts />} />
         <Route path="/checkout/payment" element={<Payment />} />
+        <Route path="/success" element={<SuccessPage />} />
       </Routes>
     </BrowserRouter>
   );

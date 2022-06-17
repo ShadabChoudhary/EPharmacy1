@@ -3,12 +3,20 @@ import "./ForgotPass.css";
 import { useState } from "react";
 
 function ForgotPass() {
-  const [email, setEmail] = useState("");
+  const [recEmail, setRecEmail] = useState({ email: "" });
   const [message, setMessage] = useState();
+
+  const handleInputs = async (e) => {
+    e.preventDefault();
+    const { name, value } = e.target;
+    setRecEmail({ ...recEmail, [name]: value });
+
+    // document.querySelector(".error-message").style.display = "none";
+  };
 
   const sendEmail = async (e) => {
     e.preventDefault();
-
+    const { email } = recEmail;
     const postEmail = await fetch("http://localhost:8000/api/password/forgot", {
       method: "POST",
       headers: {
@@ -38,10 +46,10 @@ function ForgotPass() {
       <form action="post" className="email-input-container" method="post">
         <div className="form">
           <input
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={recEmail.email}
+            onChange={handleInputs}
             type="email"
-            placeholder="Enter email"
+            placeholder="Enter your email"
             className="email-input"
             name="email"
           />

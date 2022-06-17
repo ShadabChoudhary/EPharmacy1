@@ -1,0 +1,30 @@
+.success_page_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: rgba(70, 170, 30, 0.25);
+  line-height: 50px;
+}
+
+.success_title {
+  color: green;
+}
+
+.bth {
+  text-decoration: none;
+  color: #1568bb;
+  font-weight: bold;
+}
+
+.bth:hover {
+  text-decoration: underline;
+  color: #1568bb;
+}

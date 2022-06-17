@@ -30,10 +30,7 @@
 }
 
 /* .right-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  flex-basis: 100%;
 } */
 
 .left-container {
@@ -48,10 +45,11 @@
   width: 30px;
 }
 .signup {
+  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   padding: 20px;
+  /* height: 100%; */
 }
 
 .err-msg-container {
@@ -68,16 +66,17 @@
   border: 2px solid red;
   background-color: rgba(240, 64, 64, 0.3);
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   padding: 10px;
 }
 
 .form {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   margin-top: 50px;
 }
+
 .input-control {
   outline: none;
   border-top: none;
@@ -102,8 +101,8 @@
 }
 
 .req-err {
-  display: flex;
-  justify-content: baseline;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .btn {

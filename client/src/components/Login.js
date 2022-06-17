@@ -16,6 +16,7 @@ function Login() {
     setLogin({ ...login, [name]: value });
     e.target.classList.remove("error");
     e.target.parentElement.querySelector("span").style.display = "none";
+    // document.querySelector(".err-msg-container").style.display = "none";
   };
 
   const loginUser = async (e) => {
@@ -82,7 +83,8 @@ function Login() {
                   className="input-control"
                   name="email"
                 />
-                <span>Required</span>
+
+                <span className="req-err">Required</span>
               </div>
               <div className="form">
                 <label htmlFor="password" className="form-label">
@@ -96,7 +98,8 @@ function Login() {
                   className="input-control"
                   name="password"
                 />
-                <span>Required</span>
+
+                <span className="req-err">Required</span>
               </div>
               <div className="forgot-pass-container">
                 <Link to="/recover-pass" className="forgot-pass">
